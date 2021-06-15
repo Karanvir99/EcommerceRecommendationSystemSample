@@ -1,0 +1,555 @@
+﻿<style type="text/css" >
+
+/*Tab container*/
+/*-----------------------------------------------------------------------------*/
+.TabContainer .ajax__tab_header {
+    cursor: pointer;
+    background-color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Verdana;
+    height: 36px;
+    border-bottom: 1px solid #ffffff;
+    width: 650px;
+}
+
+.TabContainer .ajax__tab_active .ajax__tab_tab {
+    border: 1px solid;
+    border-color: #bebebe #bebebe #e1e1e1 #bebebe;
+    background-color: #ffffff;
+    border-top: solid 4px;
+    border-top-color: #4CEF9D;
+    color: #4CEF9D;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.TabContainer .ajax__tab_active .ajax__tab_tab:hover {
+    border: 1px solid;
+    border-color: #bebebe #bebebe #e1e1e1 #bebebe;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.TabContainer .ajax__tab_tab {
+    border: 1px solid;
+    border-color: #e1e1e1 #e1e1e1 #bebebe #e1e1e1;
+    background-color: #f1f1f1;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    width: 302px;
+}
+
+.TabContainer .ajax__tab_tab:hover {
+    border: 1px solid;
+    border-color: #bebebe #bebebe #e1e1e1 #bebebe;
+    background-color: #e1e1e1;
+    color: #777777;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: none;
+}
+
+.TabContainer .ajax__tab_active .ajax__tab_tab, .TabContainer .ajax__tab_tab, .TabContainer .ajax__tab_header .ajax__tab_tab {
+    margin: 0px 0px 0px 0px;
+}
+
+.TabContainer .ajax__tab_body {
+    font-family: Verdana;
+    font-size: 10pt;
+    border-top: 0;
+    border: 1px solid #bebebe;
+    border-top: none;
+    padding: 5px;
+    background-color: #e1e1e1;
+    width: 100%;
+    height: 100%;
+}
+/*-----------------------------------------------------------------------------*/
+
+.Button {
+    background-color: #4CEF9D;
+    border: 2px solid #000000;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.TextBox {
+    font-family: Verdana;
+    border: 2px solid #dadada;
+    align-content: center;
+    height: 20px;
+    width: 300px;
+}
+
+.TextBox:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+.SmallTextBox {
+    font-family: Verdana;
+    border: 2px solid #dadada;
+    align-content: center;
+    height: 20px;
+    width: 150px;
+}
+
+.SmallTextBox:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+.MultiLineTextBox {
+    font-family: Verdana;
+    border: 2px solid #dadada;
+    align-content: center;
+    height: 300px;
+    width: 520px;
+}
+
+.MultiLineTextBox:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+.CheckBoxList {
+    font-family: Verdana;
+    font-size: large;
+}
+
+.DropDownList {
+    border: 2px solid #dadada;
+    align-content: center;
+    height: 25px;
+    width: 305px;
+}
+
+.DropDownList:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+/*Menu*/
+/*-----------------------------------------------------------------------------*/
+.MenuStyle {
+    background-color: #2d2d30;
+    text-align: center;
+    font-family: Verdana;
+    font-size: large;
+}
+
+.MenuItemStyle {
+    color: #ffffff;
+    width: 200px;
+    height: 35px;
+    padding-top: 12px;
+    outline: none;
+}
+
+.Menu a.static.highlighted {
+    background-color: #1b1b1c;
+    box-shadow: 0 -4px 0 #4CEF9D;
+}
+
+.DynamicMenuStyle {
+    background-color: #2d2d30;
+    font-family: Verdana;
+    font-size: medium;
+}
+
+.DynamicMenuItemStyle {
+    color: #ffffff;
+    width: 250px;
+    height: 35px;
+    padding-top: 12px;
+    text-align: left;
+    padding-left: 10px;
+    outline: none;
+}
+
+.DynamicMenuItemStyle:hover {
+    background-color: #1b1b1c;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*Set item image size for admin ItemPage GridView*/
+.ItemImageSize {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Image size for viewing the item*/
+.ItemDetailsFrame {
+    border: 1px solid #E1E1E1;
+    padding: 5px;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*Image size on item browsing page*/
+.ItemListImage {
+    max-width: 200%;
+    height: auto;
+    outline: none;
+}
+
+.SearchButton, .AddCardButton, .ContinueButton, .SubmitFeedbackButton {
+    background-color: #4CEF9D;
+    border: none;
+    cursor: pointer;
+    height: 42px;
+    width: 175px;
+}
+
+.UpdateButton {
+    background-color: #4CEF9D;
+    border: none;
+    cursor: pointer;
+    height: 26px;
+    width: 60px;
+}
+
+.SearchBox {
+    font-family: Verdana;
+    border: 2px solid #000000;
+    align-content: center;
+    height: 35px;
+    width: 780px;
+}
+
+.SearchBox:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+.PurchaseButton, .FinaliseOrderButton {
+    margin: 10px;
+    padding: 15px;
+    width: 175px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #eee;
+    /* border-radius: 10px; */
+    /*display: block;*/
+    border-style: none;
+    outline: none;
+    background-image: linear-gradient(to right, #4CEF9D 0%, #194E34 51%, #4CEF9D 100%)
+}
+
+.PurchaseButton:hover, .FinaliseOrderButton:hover {
+    background-position: right center;
+    cursor: pointer;
+}
+
+.ItemDescription {
+    width: 500px;
+    height: 210px;
+    resize: none;
+    font-family: Verdana;
+    font-size: 12pt;
+    border-left-style: none;
+    border-right-style: none;
+    border-top: solid 1px;
+    border-top-color: #4CEF9D;
+    border-bottom: solid 1px;
+    border-bottom-color: #4CEF9D;
+    cursor: context-menu;
+}
+
+.ItemDescription:focus {
+    outline: none;
+    cursor: default;
+}
+
+/*Scrollbar*/
+/*-----------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E1E1E1;  
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4CEF9D;  
+}
+/*-----------------------------------------------------------------------------*/
+
+.ItemSpecPanel {
+    width: 300px;
+    height: 330px;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left: solid 1px;
+    border-left-color: #4CEF9D;
+    border-right: solid 1px;
+    border-right-color: #4CEF9D;
+}
+
+.SmallDropDownList {
+    border: 2px solid #dadada;
+    align-content: center;
+    height: 25px;
+    width: 150px;
+}
+
+.SmallDropDownList:focus {
+    outline: none;
+    border-color: #4CEF9D;
+    box-shadow: 0 0 5px #4CEF9D;
+}
+
+/*Account Menu*/
+/*-----------------------------------------------------------------------------*/
+.AccountMenuStyle {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Verdana;
+    font-size: small;
+}
+
+.AccountMenuItemStyle {
+    color: #000000;
+    width: 100px;
+    height: 25px;
+    padding-top: 12px;
+    outline: none;
+}
+
+.AccountMenu a.static.highlighted {
+    color: #4CEF9D;
+    box-shadow: 0 -2px 0 #4CEF9D;
+}
+
+.AccountMenu a.static.selected {
+    outline: none;
+}
+
+.AccountDynamicMenuStyle {
+    background-color: #FFFFFF;
+    font-family: Verdana;
+    font-size: small;
+    border: 1.5px solid #4CEF9D;
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+.AccountDynamicMenuItemStyle {
+    color: #000000;
+    width: 150px;
+    height: 25px;
+    padding-top: 12px;
+    text-align: left;
+    padding-left: 10px;
+    outline: none;
+}
+
+.AccountDynamicMenuItemStyle:hover {
+    color: #4CEF9D;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*Datalist navigation buttons*/
+/*-----------------------------------------------------------------------------*/
+.PreviousButton, .NextButton {
+    width: 36px;
+    height: 39px;
+    margin: 10px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-style: none;
+    outline: none;
+    background-image: linear-gradient(to right, #4CEF9D 0%, #194E34 51%, #4CEF9D 100%)
+}
+
+.PreviousButton:hover, .NextButton:hover {
+    background-position: right center;
+    cursor: pointer;
+}
+/*-----------------------------------------------------------------------------*/
+
+.RecommenderList {
+    border-left-style: none;
+    border-right-style: none;
+    border-top: solid 1px;
+    border-top-color: #4CEF9D;
+    border-bottom: solid 1px;
+    border-bottom-color: #4CEF9D;
+}
+
+.HomeRecommenderList {
+    border-left-style: none;
+    border-right-style: none;
+    border-top: solid 1px;
+    border-top-color: #E1E1E1;
+    border-bottom: solid 1px;
+    border-bottom-color: #E1E1E1;
+}
+
+.HomeRecommenderList2 {
+    border-left-style: none;
+    border-right-style: none;
+    border-top: none;
+    border-bottom: solid 1px;
+    border-bottom-color: #E1E1E1;
+}
+
+.RecommenderItemImage {
+    padding: 5px;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    outline: none;
+}
+
+.RecommenderItemName {
+    font-family: Verdana;
+    color: #000000;
+    text-decoration: none;
+}
+
+.RecommenderItemName:hover {
+    color: #4CEF9D;
+    text-decoration: underline;
+}
+
+.RecommenderItemPrice {
+    font-family: Verdana;
+    color: #CC0000;
+    text-decoration: none;
+}
+
+.SubtotalTextbox {
+    width: 100px;
+    border: none;
+    outline: none;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: medium;
+    color: #CC0000;
+}
+
+.CheckoutButton {
+    background-color: #4CEF9D;
+    border: 2px solid #000000;
+    cursor: pointer;
+    height: 42px;
+    width: 195px;
+}
+
+.OrderPanel {
+    border: 1px solid #E1E1E1;
+    width: 1000px;
+}
+
+.PaymentPanel, .AddressPanel {
+    border: 1px solid #E1E1E1;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    width: 1000px;
+}
+
+.OrderSummaryPanel {
+    border: 1px solid #E1E1E1;
+    width: 300px;
+    position: fixed;
+}
+
+.ItemListName, .ItemListPrice {
+    color: #000000;
+    text-decoration: none;
+}
+
+.ItemListName:hover {
+    color: #4CEF9D;
+}
+
+.GViewBasketPage, .GViewPaymentPage {
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.LoginMenuStyle {
+    background-color: #ffffff;
+    text-align: center;
+    font-family: Verdana;
+    font-size: small;
+}
+
+.LoginMenuItemStyle {
+    color: #000000;
+    width: 100px;
+    height: 25px;
+    padding-top: 12px;
+    outline: none;
+}
+
+.LoginMenu a.static.highlighted {
+    color: #4CEF9D;
+    box-shadow: 0 -2px 0 #4CEF9D;
+}
+
+.CustomerReviewList {
+    border-top-style: none;
+    border-bottom-style: none;
+    border-left: solid 1px;
+    border-left-color: #4CEF9D;
+    border-right: solid 1px;
+    border-right-color: #4CEF9D;
+}
+
+.CustomerFeedbackName {
+    font-family: Verdana;
+    font-size: large;
+}
+
+.CustomerFeedbackRating {
+    font-family: Verdana;
+    font-weight: bold;
+    color: darkorange;
+}
+
+.CustomerFeedbackDate {
+    font-family: Verdana;
+    color: gray;
+}
+
+.CustomerFeedbackDescription {
+    font-family: Verdana;
+}
+
+</style >
